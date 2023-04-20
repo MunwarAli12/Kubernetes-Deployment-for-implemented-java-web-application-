@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servertask
+  labels:
+    app: servertask
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: servertask
+  template:
+    metadata:
+      labels:
+        app: servertask
+    spec:
+      containers:
+      - name: servertask
+        image: servertask:1.0
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SPRING_DATA_MONGODB_HOST
+          value: localhost
+        - name: SPRING_DATA_MONGODB_PORT
+          value: "27017"
+        - name: SPRING_DATA_MONGODB_DATABASE
+          value: serversdata
