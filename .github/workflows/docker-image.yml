@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build -t servertask:1.0 .
+      run: docker build . --file servertask:1.0 -t servertask1:1.0 .
 
 
   
