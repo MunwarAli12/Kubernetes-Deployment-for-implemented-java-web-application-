@@ -1,5 +1,7 @@
-# KAIBURR_TASK_3_19BEC0743
-Previous we have checked and implemented all the rest api : https://github.com/MunwarAli12/MUNWARALI-19BEC0743-KAIBURR_TASK1
+As part of this, I have created Dockerfiles and built Docker images for the web application that I developed earlier using the Angular framework. Additionally, I created Kubernetes YAML manifests for the application, including a deployment and a service and the application can be exposed using a LoadBalancer .
+
+To deploy the application to a Kubernetes cluster, I spun up a single-node local Kubernetes cluster using Docker Desktop, Kind or Minikube, 
+Previous we have checked and implemented all the rest api : https://github.com/MunwarAli12/model-java_REST-API_web_application-
 now creating docker file;
 ![image](https://user-images.githubusercontent.com/126280146/233519188-a0fa1923-f125-4c68-8256-cbe19d52127a.png)
 building the Docker image;
